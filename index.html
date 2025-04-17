@@ -9,38 +9,56 @@
 </head>
 
 <body id="body">
-    <div id="box">
-        <img src="" alt="log in kuva">
-        <h1>
-            Log in
-        </h1>
-        <p>
-            Tekstiä
-        </p>
-        <div id="user">
-            <input type="text" id="username" name="username" placeholder="Username" >
-        </div>
-        <div>
-            <input type="password" id="password" name="password" placeholder="Password">
-        </div>
-        <a>
-            Forgot password
-        </a>
-        <div id="buttons">
+    <main id="box">
+        <header>
+            <img id="profiilikuva" src="/icons/person_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg">
+            <h1>
+                Login
+            </h1>
+            <p id="teksti">
+                Kirjaudu sisään käyttäen etu.sukunimi@"sähköposti"
+            </p>
+        </header>
+
+        <form>
+            <div id="user">
+                <input type="text" id="username" name="username" placeholder="Username" >
+            </div>
+            <div>
+                <input type="password" id="password" name="password" placeholder="Password">
+            </div>
+
+            <div id="checkbox">
+                <input type="checkbox" name="checkbox" value="Remember me">
+                <label for="checkbox">Remember me </label>
+
+                <a id="forgot" href="#">
+                    Forgot password
+                </a>
+            </div>
+
             <button id="submit">
-                Submit
+                Login
             </button>
-            <button>
-                kuva 1
+        </form>
+        
+        <p id="sign">
+            Don't have account? <a href="#"> Sign up</a>
+        </p>
+        
+        <section id="buttonsWrapper">
+            <button class="buttonBorder">
+                <img src="icons/3225194_app_facebook_logo_media_popular_icon.png" id="facebook"/>
             </button>
-            <button>
-                kuva 2
+            <button class="buttonBorder">
+                <img src="icons/1298745_google_brand_branding_logo_network_icon.png" id="google"/>
             </button>
-            <button>
-                kuva 3
+            <button class="buttonBorder">
+                <img src="icons/104447_apple_logo_icon.png" id="apple"/>
             </button>
-        </div>
-    </div>
+        </section>
+
+    </main>
 </body>
 
 

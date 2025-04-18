@@ -14,11 +14,6 @@ body    {
     
 }
 
-#buttons {
-    display: flex;
-    flex-direction: column;
-}
-
 h1 {
     text-align: center;
     margin-top: 10px;
@@ -37,6 +32,11 @@ body {
     height: 40px;
     border-radius: 10px;
     border: none;
+    background-image: url(icons/person_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg);
+    background-position: 10px 7px; 
+    background-repeat: no-repeat;
+    padding-left: 39px;
+    
 }
 
 #password {
@@ -45,6 +45,10 @@ body {
     margin-top: 10px;
     border-radius: 10px;
     border: none;
+    background-image: url(icons/lock_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg);
+    background-position: 10px 7px; 
+    background-repeat: no-repeat;
+    padding-left: 39px;
 }
 
 #forgot {
@@ -115,8 +119,8 @@ body {
 #profiilikuva {
     border: solid 4px;
     border-radius: 60px;
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
 }
 
 form {
@@ -140,3 +144,14 @@ header {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+@media (max-width: 400px) {
+    #box {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    #username, #password, #submit {
+      width: 100%;
+    }
+  }

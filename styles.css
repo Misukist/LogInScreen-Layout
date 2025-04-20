@@ -1,9 +1,18 @@
 :root{
-    --base-color: white;
-    --base-variant: #e8e9ed;
+    --base-color: rgba(85, 85, 85, 0.068);
+    --base-variant: #babbbe;
     --text-color:  #111528;
     --secondary-text: #232738;
-    --primary-color: #3a435d;
+    --primary-color: white;
+    --accent-color: #0071ff;
+}
+
+.darkmode {
+    --base-color: rgba(85, 85, 85, 0.068);
+    --base-variant: #252525;
+    --text-color:  #FFFFFF;
+    --secondary-text: #232738;
+    --primary-color: #323135;
     --accent-color: #0071ff;
 }
 
@@ -11,6 +20,7 @@
 body    {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--text-color);
+    background-color: var(--base-variant);
 }
 
 
@@ -38,11 +48,9 @@ body    {
     position: absolute;
     top: 10px;
     right: 10px;
+    border: none;
 }
 
-#theme-switch:focus {
-    outline:0;
-}
 
 #theme-switch svg{
     fill: var(--primary-color);
@@ -81,6 +89,7 @@ body {
     background-position: 10px 7px; 
     background-repeat: no-repeat;
     padding-left: 39px;
+    background-color:var(--base-color) ;
     
 }
 
@@ -94,6 +103,7 @@ body {
     background-position: 10px 8px; 
     background-repeat: no-repeat;
     padding-left: 39px;
+    background-color:var(--base-color) ;
 }
 
 #forgot {
@@ -119,8 +129,8 @@ body {
     cursor: pointer;
     justify-content: center;
     align-items: center;
-    transition-duration: 0.4s
-    
+    transition-duration: 0.4s;
+    background-color: var(--base-color);
 }
 
 .buttonBorder:hover {
@@ -201,6 +211,7 @@ header {
     align-items: center;
     margin-top: 10px;
     margin-bottom: 10px;
+    
 }
 
 @media (max-width: 400px) {

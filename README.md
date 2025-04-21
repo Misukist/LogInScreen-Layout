@@ -12,6 +12,6 @@
 
 🌗 Dark/Light mode -tuki, joka:
 
-    On rakennettu JavaScriptilla
+- On rakennettu JavaScriptilla
 
-    Tallentaa valinnan localStorageen, eli säilyy myös sivun päivityksen jälkeen
+- Tallentaa valinnan `localStorage`en, eli säilyy myös sivun päivityksen jälkeen

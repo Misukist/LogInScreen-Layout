@@ -2,9 +2,10 @@
     --base-color: rgba(85, 85, 85, 0.068);
     --base-variant: #babbbe;
     --text-color:  #111528;
-    --secondary-text: #232738;
+    --secondary-text: #333;
     --primary-color: white;
     --accent-color: #0071ff;
+    --link-color: #38bdf8;
 }
 
 .darkmode {
@@ -14,6 +15,8 @@
     --secondary-text: #232738;
     --primary-color: #323135;
     --accent-color: #0071ff;
+    --link-color: #38bdf8; 
+
 }
 
 
@@ -36,6 +39,10 @@ body    {
     
 }
 
+a {
+    color: var(--link-color);
+}
+
 #theme-switch {
     height: 50px;
     width: 50px;
@@ -55,17 +62,18 @@ body    {
 #theme-switch svg{
     fill: var(--primary-color);
 }
-#theme-switch svg:last-child{
+#theme-switch svg:first-child{
     display: none;
 }
 
-.darkmode #theme-switch svg:first-child{
+.darkmode #theme-switch svg:last-child{
     display: none;
 }
 
-.darkmode #theme-switch svg:last-child {
+.darkmode #theme-switch svg:first-child {
     display: block;
 }
+
 
 h1 {
     text-align: center;
@@ -158,13 +166,33 @@ body {
 }
 
 #submit {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color);
     background-color: var(--accent-color);
     width: 250px;
     height: 40px;
     margin-top: 10px;
     border-radius: 10px;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
 }
+
+#submit svg {
+    fill: var(--text-color);
+}
+
+#submit:hover {
+    color: var(--secondary-text);
+}
+
+#submit:hover svg {
+    fill: var(--secondary-text);
+}
+
 
 #teksti {
     text-align: top;
@@ -211,7 +239,6 @@ header {
     align-items: center;
     margin-top: 10px;
     margin-bottom: 10px;
-    
 }
 
 @media (max-width: 400px) {
